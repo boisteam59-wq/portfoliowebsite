@@ -6,38 +6,34 @@
   <title>Ajay Kumar M | Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Top Bar -->
-  <div class="topbar">
-    <p>Student Portfolio Website | Ajay Kumar M</p>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">EPortfolio</div>
-
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <a href="#contact" class="nav-btn">Message Me</a>
-  </nav>
+  <!-- Top Navbar -->
+  <header class="top-header">
+    <div class="top-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <h1>GET START</h1>
-    <h2>YOUR PORTFOLIO JOURNEY</h2>
-    <p>
-      Hi, I'm Ajay Kumar M. I'm a student and beginner full stack developer learning
-      HTML, CSS, JavaScript, Node.js and MongoDB.
+    <h2 class="hero-brand">Ajay Portfolio</h2>
+
+    <h1 class="hero-title">
+      LETS START <br />
+      MY PORTFOLIO
+    </h1>
+
+    <p class="hero-text">
+      Hi, I’m Ajay Kumar M. I’m a student learning Full Stack Development.
+      This website is created using HTML, CSS, JavaScript, Node.js and MongoDB Atlas.
     </p>
 
     <a href="#projects" class="hero-btn">VIEW PROJECTS</a>
@@ -46,74 +42,74 @@
   <!-- About -->
   <section class="section" id="about">
     <h2 class="section-title">About Me</h2>
-    <p class="section-text">
-      Hello! I'm <b>Ajay Kumar M</b>. I'm passionate about web development and currently
-      improving my skills in frontend and backend development. I enjoy creating clean
-      and responsive websites.
+    <p class="section-desc">
+      Hello! I’m <b>Ajay Kumar M</b>. I am a beginner web developer interested in
+      frontend and backend development. I enjoy creating responsive websites
+      and learning new technologies, and using it to discover new things.
     </p>
   </section>
 
   <!-- Skills -->
-  <section class="section" id="skills">
-    <h2 class="section-title">My Skills</h2>
+  <section class="section light-section" id="skills">
+    <h2 class="section-title">Skills</h2>
 
-    <div class="cards">
+    <div class="card-container">
       <div class="card">
         <h3>HTML5</h3>
-        <p>Creating structured web pages using modern HTML.</p>
+        <p>Structured web pages using modern HTML.</p>
       </div>
 
       <div class="card">
         <h3>CSS3</h3>
-        <p>Designing beautiful responsive layouts and UI designs.</p>
+        <p>Responsive layouts and modern UI styling.</p>
       </div>
 
       <div class="card">
         <h3>JavaScript</h3>
-        <p>Adding dynamic features and interactive functionality.</p>
+        <p>Interactive web pages and dynamic features.</p>
       </div>
 
       <div class="card">
         <h3>Git & GitHub</h3>
-        <p>Managing projects with version control and GitHub hosting.</p>
+        <p>Version control and online code hosting.</p>
       </div>
 
       <div class="card">
         <h3>Node.js</h3>
-        <p>Building backend server applications with Express.</p>
+        <p>Backend server development using Express.</p>
       </div>
 
       <div class="card">
-        <h3>MongoDB</h3>
-        <p>Storing user data using MongoDB Atlas cloud database.</p>
+        <h3>MongoDB Atlas</h3>
+        <p>Cloud database integration for storing data.</p>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
   <section class="section" id="projects">
-    <h2 class="section-title">My Projects</h2>
+    <h2 class="section-title">Projects</h2>
 
-    <div class="cards">
+    <div class="card-container">
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>A modern single-page portfolio built using HTML, CSS, and JavaScript.</p>
+        <p>A single page student portfolio created using HTML, CSS and JavaScript.</p>
       </div>
 
       <div class="card">
         <h3>Contact Form Backend</h3>
-        <p>Node.js + MongoDB backend to store messages submitted from the website.</p>
+        <p>Node.js backend connected with MongoDB Atlas to store contact messages.</p>
       </div>
 
       <div class="card">
-        <h3>Responsive Web Page</h3>
-        <p>A responsive landing page with clean design and professional layout.</p>
+        <h3>Responsive Website</h3>
+        <p>A responsive webpage designed with clean layout and styling.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="section contact-section" id="contact">
+  <section class="section light-section" id="contact">
     <h2 class="section-title">Contact Me</h2>
 
     <form id="contactForm" class="contact-form">
@@ -127,8 +123,9 @@
     <p id="status"></p>
   </section>
 
-  <footer>
-    <p>© 2026 Ajay Kumar M | Portfolio Website</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Ajay Kumar M | Student Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
