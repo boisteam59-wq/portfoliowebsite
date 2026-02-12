@@ -11,7 +11,7 @@ form.addEventListener("submit", async (e) => {
   const message = document.getElementById("message").value;
 
   try {
-    const response = await fetch("https://mywebsite-1pm6.onrender.com/contact", {
+    const response = await fetch("https://mywebsite-1pm6.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
