@@ -5,115 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajay Kumar M | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Top Bar -->
+  <div class="topbar">
+    <p>Student Portfolio Website | Ajay Kumar M</p>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo">◆</div>
+    <div class="logo">EPortfolio</div>
 
     <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <a href="#contact" class="nav-btn">Message Me</a>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-icon">◆</div>
+    <h1>GET START</h1>
+    <h2>YOUR PORTFOLIO JOURNEY</h2>
+    <p>
+      Hi, I'm Ajay Kumar M. I'm a student and beginner full stack developer learning
+      HTML, CSS, JavaScript, Node.js and MongoDB.
+    </p>
 
-      <h1>Hi, I'm <br> Ajay Kumar M</h1>
-
-      <p>
-        I'm a student and beginner web developer. I enjoy learning and building websites
-        using HTML, CSS, JavaScript, Node.js and MongoDB.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-
-      <p class="hero-note">
-        This portfolio website is created as part of a college project and is connected to MongoDB Atlas.
-      </p>
-    </div>
+    <a href="#projects" class="hero-btn">VIEW PROJECTS</a>
   </section>
 
   <!-- About -->
   <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm <b>Ajay Kumar M</b>. I'm interested in web development and currently learning
-      full stack development. I like creating simple, clean, and responsive websites.
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      Hello! I'm <b>Ajay Kumar M</b>. I'm passionate about web development and currently
+      improving my skills in frontend and backend development. I enjoy creating clean
+      and responsive websites.
     </p>
   </section>
 
   <!-- Skills -->
   <section class="section" id="skills">
-    <h2>Skills</h2>
+    <h2 class="section-title">My Skills</h2>
 
-    <div class="skills-grid">
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">Git & GitHub</div>
-      <div class="skill-card">Node.js</div>
-      <div class="skill-card">MongoDB Atlas</div>
+    <div class="cards">
+      <div class="card">
+        <h3>HTML5</h3>
+        <p>Creating structured web pages using modern HTML.</p>
+      </div>
+
+      <div class="card">
+        <h3>CSS3</h3>
+        <p>Designing beautiful responsive layouts and UI designs.</p>
+      </div>
+
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Adding dynamic features and interactive functionality.</p>
+      </div>
+
+      <div class="card">
+        <h3>Git & GitHub</h3>
+        <p>Managing projects with version control and GitHub hosting.</p>
+      </div>
+
+      <div class="card">
+        <h3>Node.js</h3>
+        <p>Building backend server applications with Express.</p>
+      </div>
+
+      <div class="card">
+        <h3>MongoDB</h3>
+        <p>Storing user data using MongoDB Atlas cloud database.</p>
+      </div>
     </div>
   </section>
 
   <!-- Projects -->
   <section class="section" id="projects">
-    <h2>Projects</h2>
+    <h2 class="section-title">My Projects</h2>
 
-    <div class="projects-grid">
-      <div class="project-card">
+    <div class="cards">
+      <div class="card">
         <h3>Portfolio Website</h3>
-        <p>
-          A single page portfolio website created using HTML, CSS and JavaScript.
-        </p>
+        <p>A modern single-page portfolio built using HTML, CSS, and JavaScript.</p>
       </div>
 
-      <div class="project-card">
+      <div class="card">
         <h3>Contact Form Backend</h3>
-        <p>
-          A backend project using Node.js and Express that stores messages in MongoDB Atlas.
-        </p>
+        <p>Node.js + MongoDB backend to store messages submitted from the website.</p>
       </div>
 
-      <div class="project-card">
+      <div class="card">
         <h3>Responsive Web Page</h3>
-        <p>
-          A responsive web design project built with modern UI layout and styling.
-        </p>
+        <p>A responsive landing page with clean design and professional layout.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
+  <section class="section contact-section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
 
     <form id="contactForm" class="contact-form">
       <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
       <textarea id="message" placeholder="Your Message" required></textarea>
 
-      <button type="submit">Submit</button>
+      <button type="submit">SEND MESSAGE</button>
     </form>
 
     <p id="status"></p>
   </section>
 
   <footer>
-    <p>© 2026 Ajay Kumar M | Student Portfolio</p>
+    <p>© 2026 Ajay Kumar M | Portfolio Website</p>
   </footer>
 
   <script src="script.js"></script>
